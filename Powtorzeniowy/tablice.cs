@@ -12,5 +12,17 @@ namespace Powtorzeniowy
         {
             Console.WriteLine("to jest plik  z tablicami");
         }
+        public int[] Tworzenie_tablicy()
+        {
+            Console.WriteLine("ile znakow ma miec tablca");
+            int dl = int.Parse(Console.ReadLine());
+            int[] ints = new int[dl];
+            for (int i = 0; i < dl; i++)
+            {
+                Console.Write("podaj kolejny elemnet");
+                ints[i] = int.Parse(Console.ReadLine());
+            }
+            return ints;
+        }
     }
 }
