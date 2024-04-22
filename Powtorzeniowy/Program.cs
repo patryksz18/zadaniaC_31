@@ -8,6 +8,7 @@ class PlikGłówny
     {
         //zmienna ktora jest odwolaniem do innego skryptu
         Tablice tablica = new Tablice();
-        tablica.Wyswietl();
+        int[] tab= tablica.Tworzenie_tablicy();
+        tablica.Wyswietl(tab);
     }
 }
