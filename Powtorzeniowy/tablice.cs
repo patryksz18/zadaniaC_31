@@ -42,5 +42,28 @@ namespace Powtorzeniowy
                 }
             }
         }
+        public void Przeszukaj(int[]tab)
+        {
+            Console.WriteLine("jakiej liczby szukasz? ");
+            int szukana = int.Parse(Console.ReadLine());
+            bool liczba_istnieje = false;
+            int ile_razy = 0;
+            for (int i = 0; i<tab.Length; i++)
+            {
+                if (tab[i] == szukana)
+                {
+                    liczba_istnieje= true;
+                    ile_razy++;
+                }
+            }
+            if (liczba_istnieje == true)
+            {
+                Console.WriteLine($"liczba wystepuje w tabllicy {ile_razy} razy ");
+            }
+            else
+            {
+                Console.WriteLine("liczba nie wystepuje w tablicy");
+            }
+        }
     }
 }
